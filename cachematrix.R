@@ -2,7 +2,11 @@
 ## functions do
 
 ## Write a short comment describing this function
-## short comment
+## this is a function meant to "hold" an inverted matrix
+## the function takes a matrix as a parameter 
+## and, in case the "instance" of this function doesn't
+## already hold an inverted matrix, it computes the inverse of this matrix
+## and "holds" the calculated matrix
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -21,6 +25,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## this function takes an instance of the "makeCacheMatrix"
+## and checks if that instance "holds" an already inverted matrix
+## if so, then that matrix is returned, otherwise the 
+## inverted is calculated and returned
+
 
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
